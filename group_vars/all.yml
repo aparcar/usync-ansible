@@ -1,0 +1,6 @@
+websocket_url: websocket.usync.org
+balancer_port: 3000
+backend_addresses:
+  - localhost:11783
+letsencrypt_email: mail@aparcar.org
+usyncd_repo: https://github.com/aparcar/usync-py-ws.git

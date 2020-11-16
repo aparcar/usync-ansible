@@ -1,0 +1,14 @@
+---
+- name: Install requirements
+  apt: 
+    name: git
+    state: present
+    update_cache: true
+  become: true
+
+- name: Clone usyncd
+  git:
+    repo: "{{ usyncd_repo }}"
+    dest: /home/aparcar/usyncd/
+    update: true
+
